@@ -7,7 +7,7 @@ Webhooks facilitates communication with third-party applications by sending inst
 
  - **Agile CRM web hooks is located at** - Admin Settings > API & Analytics > Webhooks
  
-![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook4.PNG)
+![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hooks5.PNG)
 
  - **List of fields in webhooks** 
  
