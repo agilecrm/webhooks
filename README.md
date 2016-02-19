@@ -84,7 +84,8 @@ Here is an example of what a JSON-encoded transcript might look like.
 
 - **Sample Data (json formatted)** - 
 
-- **Request Type ** -Contact
+- **Request Type ** Contact
+
 <pre>
 {
     "eventName": "Contact is Created",
@@ -116,3 +117,70 @@ Here is an example of what a JSON-encoded transcript might look like.
 }
 </pre>
 
+<pre>
+{
+    "eventName": "Contact is Updated",
+    "eventData": {
+        "id": 5667649732214784,
+        "type": "PERSON",
+        "created_time": 1455855737,
+        "updated_time": 1455856605,
+        "properties": [
+            {
+                "type": "SYSTEM",
+                "name": "last_name",
+                "subtype": null,
+                "value": "Delta Updated"
+            },
+            {
+                "type": "SYSTEM",
+                "name": "email",
+                "subtype": "",
+                "value": "john@alien.comm  "
+            }
+        ]
+    }
+}
+</pre>
+
+- **Request Type ** Deal
+
+<pre>
+{
+    "eventName": "Opportunity is Created",
+    "eventData": {
+        "colorName": "GREY",
+        "id": 5721670354468864,
+        "name": "deal plane",
+        "contact_ids": [
+            "5667649732214784"
+        ],
+        "expected_value": 50000,
+        "milestone": "Proposal",
+        "probability": 95,
+        "close_date": null,
+        "owner_id": "6263975862861824",
+        "pipeline_id": 5730082031140864
+    }
+}
+</pre>
+
+<pre>
+{
+    "eventName": "Opportunity is Updated",
+    "eventData": {
+        "colorName": "GREY",
+        "id": 5721670354468864,
+        "name": "deal plane",
+        "contact_ids": [
+            "5667649732214784"
+        ],
+        "expected_value": 50000,
+        "milestone": "Proposal",
+        "probability": 99,
+        "close_date": null,
+        "owner_id": "6263975862861824",
+        "pipeline_id": 5730082031140864
+    }
+}
+</pre>
