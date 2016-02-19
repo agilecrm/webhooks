@@ -7,35 +7,35 @@ Webhooks facilitates communication with third-party applications by sending inst
 
  - **Agile CRM web hooks is located at** - Admin Settings > API & Analytics > Webhooks
  
-![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook2.PNG)
+![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook4.PNG)
 
- - **List of Fields in Webhooks** 
+ - **List of fields in webhooks** 
  
-|Field Name|Description|Data Type|
+|Field name|Description|Data type|
 |:-----|:------|:--------------|
-|Notify URL|Specify the REST API URL of the third-party application.|URL|
-|Module|Contact and Deal|Check Box|
+|Notify URL|Specify the REST api URL of the third-party application.|URL|
+|Module|Contact and Deal|Check box|
 
 
 
 Configuring your webhooks settings:
 --------
 
-- **Step1** -  Create a webhooks endpoint. A webhook endpoint is a URL on your server that will receive each transcript when a event happend, e.g. http://www.example.com/agile_endpoint.php
+- **Step 1** -  Create a webhooks endpoint. A webhook endpoint is a URL on your server that will receive each transcript when a event happend, e.g. http://www.example.com/agile_endpoint.php
 
 When trigger event happend, Agile CRM makes HTTP POST to the endpoint you specified. The POST has two data fields, and containing the JSON-encoded transcript.
 
-- **Step2** -  Enter the address to your webhooks endpoint on our Admin Settings > API & Analytics > Webhooks
+- **Step 2** -  Enter the address to your webhooks endpoint on our Admin Settings > API & Analytics > Webhooks
 
-![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook3.PNG)
+![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hooks5.PNG)
 
-- **Step3** -  Click the "Save" button to ensure your endpoint is configured properly.
+- **Step 3** -  Click the "Save" button to ensure your endpoint is configured properly.
 
-- **Step4** -  Your endpoint can then return JSON containing the two field eventName and eventData.
+- **Step 4** -  Your endpoint can then return JSON containing the two field eventName and eventData.
 
-## Sample Data (json formatted)
+## Sample data (json formatted)
 
-- **Request Type** -  Contact
+- **Request type** -  Contact
 
 > Example 1
 
@@ -98,7 +98,7 @@ When trigger event happend, Agile CRM makes HTTP POST to the endpoint you specif
 }
 </pre>
 
-- **Request Type** -  Deal
+- **Request type** -  Deal
 
 > Example 3
 
@@ -144,7 +144,7 @@ When trigger event happend, Agile CRM makes HTTP POST to the endpoint you specif
 }
 </pre>
 
-## Testing Webhooks
+## Testing webhooks
 
 The easiest way to test the output of your webhooks is to use a service such as [RequestBin] (http://requestb.in/) or [Postcatcher.in] (http://postcatcher.in/)
 
