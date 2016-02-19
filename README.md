@@ -1,7 +1,7 @@
 Webhooks integration guide
 ===================================
 
-Webhooks facilitates communication with third-party applications by sending instant web notifications every time an event occurs in Agile CRM. Instead of polling to see if data has been updated or created in Agile CRM, you can register a URL to which we will send POSTs containing the updated data and created data. This has benefits for both sides.
+Webhooks facilitates communication with third-party applications by sending instant web notifications every time an event occurs in Agile CRM by letting you register a URL that we will notify anytime an event happens in your Agile CRM. When the event occurs.
 
 [Webhooks encyclopedia](https://en.wikipedia.org/wiki/Webhook)
 
