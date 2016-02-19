@@ -84,7 +84,9 @@ Here is an example of what a JSON-encoded transcript might look like.
 
 - **Sample Data (json formatted)** - 
 
-- **Request Type ** Contact
+- **Request Type ** -  Contact
+
+> Example 1
 
 <pre>
 {
@@ -117,6 +119,8 @@ Here is an example of what a JSON-encoded transcript might look like.
 }
 </pre>
 
+> Example 2
+
 <pre>
 {
     "eventName": "Contact is Updated",
@@ -143,7 +147,9 @@ Here is an example of what a JSON-encoded transcript might look like.
 }
 </pre>
 
-- **Request Type ** Deal
+> Example 3
+
+- **Request Type ** -  Deal
 
 <pre>
 {
@@ -165,6 +171,8 @@ Here is an example of what a JSON-encoded transcript might look like.
 }
 </pre>
 
+> Example 4
+
 <pre>
 {
     "eventName": "Opportunity is Updated",
@@ -184,3 +192,9 @@ Here is an example of what a JSON-encoded transcript might look like.
     }
 }
 </pre>
+
+## Testing Webhooks
+
+The easiest way to test the output of your webhooks is to use a service such as [RequestBin] (http://requestb.in/) or [Postcatcher.in] (http://postcatcher.in/)
+
+These services will give you a URL that will collect requests made to it and let you inspect them in a human-friendly way.
