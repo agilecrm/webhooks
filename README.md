@@ -84,7 +84,7 @@ Here is an example of what a JSON-encoded transcript might look like.
 
 - **Sample Data (json formatted)** - 
 
-- **Request Type ** -  Contact
+- **Request Type** -  Contact
 
 > Example 1
 
@@ -149,7 +149,7 @@ Here is an example of what a JSON-encoded transcript might look like.
 
 > Example 3
 
-- **Request Type ** -  Deal
+- **Request Type** -  Deal
 
 <pre>
 {
