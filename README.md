@@ -5,7 +5,7 @@ Webhooks facilitates communication with third-party applications by sending inst
 
  - **Agile CRM web hooks is located at** - Admin Settings > Webhooks
  
-![alt text](https://raw.githubusercontent.com/agilecrm/agile-crm-json-io-node/master/Screenshots/jsonio_dialog.png "JSONIO node")
+![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook1.PNG)
 
  - **List of Fields in Webhook** 
  
@@ -74,7 +74,7 @@ Here is an example of what a JSON-encoded transcript might look like.
 
 - **Step2** -  Enter the address to your webhook endpoint on our admain > webhook page
 
-![alt text](https://raw.githubusercontent.com/agilecrm/agile-crm-json-io-node/master/Screenshots/jsonio_dialog.png "JSONIO node")
+![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook1.PNG)
 
 - **Step3** -  Click the "Save" button to ensure your endpoint is configured properly.
 
