@@ -25,55 +25,6 @@ Configuring your webhook settings:
 
 When trigger event happend, Agile CRM makes HTTP POST to the endpoint you specified. The POST has two data fields, and containing the JSON-encoded transcript.
 
-Here is an example of what a JSON-encoded transcript might look like.
-
-<pre>
-{
-    "eventName": "Contact is Created",
-    "eventData": {
-        "cursor": null,
-        "count": null,
-        "id": 5680673817886720,
-        "type": "PERSON",
-        "created_time": 1454581629,
-        "updated_time": 0,
-        "last_contacted": 0,
-        "last_emailed": 0,
-        "last_campaign_emaild": 0,
-        "last_called": 0,
-        "viewed_time": 0,
-        "viewed": {
-            "viewed_time": 0,
-            "viewer_id": null
-        },
-        "star_value": 0,
-        "lead_score": 0,
-        "tags": [],
-        "tagsWithTime": [],
-        "properties": [
-            {
-                "type": "CUSTOM",
-                "name": "TeamNumbers",
-                "subtype": null,
-                "value": "0"
-            },
-            {
-                "type": "SYSTEM",
-                "name": "first_name",
-                "subtype": null,
-                "value": "test"
-            },
-            {
-                "type": "SYSTEM",
-                "name": "last_name",
-                "subtype": null,
-                "value": "hook"
-            }
-        ]
-    }
-}
-</pre>
-
 - **Step2** -  Enter the address to your webhook endpoint on our Admin Settings > API & Analytics > Webhooks
 
 ![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook3.PNG)
@@ -147,9 +98,9 @@ Here is an example of what a JSON-encoded transcript might look like.
 }
 </pre>
 
-> Example 3
-
 - **Request Type** -  Deal
+
+> Example 3
 
 <pre>
 {
