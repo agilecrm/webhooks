@@ -1,11 +1,13 @@
 Webhooks integration guide
 ===================================
 
-Webhooks facilitates communication with third-party applications by sending instant web notifications every time an event occurs in Agile CRM. By letting you register a URL that we will notify anytime an event happens in your Agile CRM. When the event occurs—for example, when a successful contact is created , Agile CRM creates an Event object. This object contains all the relevant information about what just happened, including the type of event and the data associated with that event. Agile CRM then sends the Event object to any URLs in your account's webhooks settings via an HTTP POST request. 
+Webhooks facilitates communication with third-party applications by sending instant web notifications every time an event occurs in Agile CRM. Instead of polling to see if data has been updated or created in Agile CRM, you can register a URL to which we will send POSTs containing the updated data and created data. This has benefits for both sides.
 
- - **Agile CRM web hooks is located at** - Admin Settings > Webhooks
+[Webhook encyclopedia](https://en.wikipedia.org/wiki/Webhook)
+
+ - **Agile CRM web hooks is located at** - Admin Settings > API & Analytics > Webhooks
  
-![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook1.PNG)
+![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook2.PNG)
 
  - **List of Fields in Webhook** 
  
@@ -13,7 +15,7 @@ Webhooks facilitates communication with third-party applications by sending inst
 |:-----|:------|:--------------|
 |Notify URL|Specify the REST API URL of the third-party application.|URL|
 |Module|Contact and Deal|Check Box|
-|Trigger Event|Contact is Created,Contact is Updated, Opportunity is Created, Opportunity is Updated|Json Data|
+
 
 
 Configuring your webhook settings:
@@ -72,10 +74,44 @@ Here is an example of what a JSON-encoded transcript might look like.
 }
 </pre>
 
-- **Step2** -  Enter the address to your webhook endpoint on our admain > webhook page
+- **Step2** -  Enter the address to your webhook endpoint on our Admin Settings > API & Analytics > Webhooks
 
-![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook1.PNG)
+![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook3.PNG)
 
 - **Step3** -  Click the "Save" button to ensure your endpoint is configured properly.
 
-- **Step4** -  Your endpoint can then return JSON containing the two field eventName and eventData. 
+- **Step4** -  Your endpoint can then return JSON containing the two field eventName and eventData.
+
+- **Sample Data** - 
+
+|Request Type|Sample Data (json formatted)|
+|:-----|:------|
+|contact|<pre>{
+    "eventName": "Contact is Created",
+    "eventData": {
+        "id": 5667649732214784,
+        "type": "PERSON",
+        "created_time": 1455855737,
+        "properties": [
+            {
+                "type": "SYSTEM",
+                "name": "first_name",
+                "subtype": null,
+                "value": "John"
+            },
+            {
+                "type": "SYSTEM",
+                "name": "last_name",
+                "subtype": null,
+                "value": "Delta"
+            },
+            {
+                "type": "SYSTEM",
+                "name": "email",
+                "subtype": "",
+                "value": "john@alien.comm  "
+            }
+        ]
+    }
+}</pre>|
+|Module|Contact and Deal|
