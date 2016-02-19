@@ -3,13 +3,13 @@ Webhooks integration guide
 
 Webhooks facilitates communication with third-party applications by sending instant web notifications every time an event occurs in Agile CRM. Instead of polling to see if data has been updated or created in Agile CRM, you can register a URL to which we will send POSTs containing the updated data and created data. This has benefits for both sides.
 
-[Webhook encyclopedia](https://en.wikipedia.org/wiki/Webhook)
+[Webhooks encyclopedia](https://en.wikipedia.org/wiki/Webhook)
 
  - **Agile CRM web hooks is located at** - Admin Settings > API & Analytics > Webhooks
  
 ![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook2.PNG)
 
- - **List of Fields in Webhook** 
+ - **List of Fields in Webhooks** 
  
 |Field Name|Description|Data Type|
 |:-----|:------|:--------------|
@@ -18,14 +18,14 @@ Webhooks facilitates communication with third-party applications by sending inst
 
 
 
-Configuring your webhook settings:
+Configuring your webhooks settings:
 --------
 
-- **Step1** -  Create a webhook endpoint. A webhook endpoint is a URL on your server that will receive each transcript when a event happend, e.g. http://www.example.com/agile_endpoint.php
+- **Step1** -  Create a webhooks endpoint. A webhook endpoint is a URL on your server that will receive each transcript when a event happend, e.g. http://www.example.com/agile_endpoint.php
 
 When trigger event happend, Agile CRM makes HTTP POST to the endpoint you specified. The POST has two data fields, and containing the JSON-encoded transcript.
 
-- **Step2** -  Enter the address to your webhook endpoint on our Admin Settings > API & Analytics > Webhooks
+- **Step2** -  Enter the address to your webhooks endpoint on our Admin Settings > API & Analytics > Webhooks
 
 ![alt text](https://raw.githubusercontent.com/agilecrm/webhooks/master/Screenshots/hook3.PNG)
 
