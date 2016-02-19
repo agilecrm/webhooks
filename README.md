@@ -82,7 +82,7 @@ Here is an example of what a JSON-encoded transcript might look like.
 
 - **Step4** -  Your endpoint can then return JSON containing the two field eventName and eventData.
 
-- **Sample Data (json formatted)** - 
+## Sample Data (json formatted)
 
 - **Request Type** -  Contact
 
