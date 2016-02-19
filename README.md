@@ -86,7 +86,7 @@ Here is an example of what a JSON-encoded transcript might look like.
 
 |Request Type|Sample Data (json formatted)|
 |:-----|:------|
-|contact|<pre>{
+|contact|'{
     "eventName": "Contact is Created",
     "eventData": {
         "id": 5667649732214784,
@@ -113,5 +113,5 @@ Here is an example of what a JSON-encoded transcript might look like.
             }
         ]
     }
-}</pre>|
+}'|
 |Module|Contact and Deal|
