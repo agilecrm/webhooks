@@ -1,4 +1,4 @@
-Table of Contents
+Table of contents
 --------
 
 - [Webhooks integration guide](#webhooks-integration-guide)
