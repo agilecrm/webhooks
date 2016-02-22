@@ -1,4 +1,5 @@
-**Table of Contents**  
+Table of Contents
+--------
 
 - [Webhooks integration guide](#webhooks-integration-guide)
 - [Configuring your webhooks settings](#configuring-your-webhooks-settings)
@@ -6,7 +7,7 @@
 - [Testing webhooks](#testing-webhooks)
 
 Webhooks integration guide
-===================================
+--------
 
 Webhooks facilitates communication with third-party applications by sending instant web notifications every time an event occurs in Agile CRM by letting you register a URL that we will notify anytime an event happens in your Agile CRM. When the event occurs.
 
@@ -40,7 +41,8 @@ When trigger event happend, Agile CRM makes HTTP POST to the endpoint you specif
 
 - **Step 4** -  Your endpoint can then return JSON containing the two field eventName and eventData.
 
-## Sample data (json formatted)
+Sample data (json formatted)
+--------
 
 - **Request type** -  Contact
 
@@ -151,7 +153,8 @@ When trigger event happend, Agile CRM makes HTTP POST to the endpoint you specif
 }
 </pre>
 
-## Testing webhooks
+Testing webhooks
+--------
 
 The easiest way to test the output of your webhooks is to use a service such as [RequestBin] (http://requestb.in/) or [Postcatcher.in] (http://postcatcher.in/)
 
