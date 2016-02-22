@@ -1,3 +1,10 @@
+**Table of Contents**  
+
+- [Webhooks integration guide](#webhooks-integration-guide)
+- [Configuring your webhooks settings](#configuring-your-webhooks-settings)
+- [Sample data (json formatted)](#sample-data-json-formatted)
+- [Testing webhooks](#testing-webhooks)
+
 Webhooks integration guide
 ===================================
 
